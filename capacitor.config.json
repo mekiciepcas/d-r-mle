@@ -1,0 +1,13 @@
+{
+  "appId": "com.mekiciepcas.durumle",
+  "appName": "Dürümle: Mahallenin Ustası",
+  "webDir": "dist",
+  "backgroundColor": "#284c42",
+  "loggingBehavior": "none",
+  "android": {
+    "allowMixedContent": false
+  },
+  "ios": {
+    "contentInset": "automatic"
+  }
+}

@@ -1,12 +1,12 @@
-const CACHE_NAME = 'durumle-pwa-v1';
+const CACHE_NAME = 'durumle-pwa-v3';
+const APP_SHELL = './index.html?v=7';
 const APP_ASSETS = [
-  './',
-  './index.html',
+  APP_SHELL,
   './manifest.webmanifest',
   './icon.svg',
   './icons/icon-192.png',
   './icons/icon-512.png',
-  './game.js?v=6',
+  './game.js?v=7',
   './pwa.js',
   './style.css?v=6',
   './mobile.css?v=6',
@@ -42,11 +42,11 @@ self.addEventListener('fetch', event => {
         .then(response => {
           if (response.ok) {
             const copy = response.clone();
-            caches.open(CACHE_NAME).then(cache => cache.put('./index.html', copy));
+            caches.open(CACHE_NAME).then(cache => cache.put(APP_SHELL, copy));
           }
           return response;
         })
-        .catch(async () => (await caches.match('./index.html')) || Response.error())
+        .catch(async () => (await caches.match(APP_SHELL)) || Response.error())
     );
     return;
   }

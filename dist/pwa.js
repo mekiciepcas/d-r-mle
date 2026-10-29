@@ -9,7 +9,9 @@ installHelp.className = 'pwa-install-help';
 installHelp.textContent = 'iPhone: Paylaş → Ana Ekrana Ekle. Android: tarayıcı menüsü → Uygulamayı yükle.';
 
 const dialogBody = document.querySelector('#dialog-body');
-if (dialogBody && !isStandalone()) {
+const nativeApp = window.Capacitor?.isNativePlatform() === true;
+
+if (dialogBody && !isStandalone() && !nativeApp) {
   const mobileTip = document.createElement('p');
   mobileTip.className = 'pwa-install-help';
   mobileTip.textContent = 'Telefonda müşteriye veya istasyona dokun: karakter otomatik yürüyüp etkileşir. Joystick ile de hareket edebilirsin. İlerlemen bu cihazda otomatik kaydedilir.';
@@ -68,7 +70,7 @@ window.addEventListener('offline', () => {
   }
 });
 
-if ('serviceWorker' in navigator) {
+if (!nativeApp && 'serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('./sw.js').catch(error => {
       console.error('Çevrimdışı oyun desteği kaydedilemedi.', error);
