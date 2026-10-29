@@ -14,6 +14,8 @@ button{touch-action:manipulation}
 body.sheet-open .controls{visibility:hidden}
 body.sheet-open .keyboard{visibility:hidden}
 .mobile-hint{display:none}
+.pwa-install-help{font-size:11px!important;line-height:1.55!important}
+.pwa-install{margin-top:8px!important}
 @media(max-width:700px),(pointer:coarse){
  .hud{top:calc(8px + var(--safe-top));left:calc(10px + var(--safe-left));right:calc(10px + var(--safe-right));gap:6px;z-index:3}
  .logo{padding:8px 10px;min-width:0;font-size:25px;border-radius:11px;box-shadow:0 3px 0 #9e342d;transform:none}
