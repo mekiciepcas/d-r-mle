@@ -10,6 +10,18 @@ open it in Safari, tap **Share**, then **Add to Home Screen**. After the first
 visit has cached the app, the game can also start offline. Game progress is
 saved in the current browser on the current device.
 
+## Dükkanını büyüt
+
+Şube bilgisayarındaki **Dükkâna alan ekle** menüsünden kazancınla sırayla üç
+salon modülü satın al. Modüller ₺2.000, ₺4.500 ve ₺8.000 tutar; her biri iki
+masa ve yeni bir oynanabilir alan açar.
+
+## Dükkanını büyüt
+
+Şube bilgisayarındaki **Dükkâna alan ekle** menüsünden kazancınla sırayla üç
+salon modülü satın al. Modüller ₺2.000, ₺4.500 ve ₺8.000 tutar; her biri iki
+masa ve yeni bir oynanabilir alan açar.
+
 ## Prepare native mobile projects
 
 Install Node.js 22 or later. From the project root, run:
