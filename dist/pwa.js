@@ -12,10 +12,7 @@ const dialogBody = document.querySelector('#dialog-body');
 const nativeApp = window.Capacitor?.isNativePlatform() === true;
 
 if (dialogBody && !isStandalone() && !nativeApp) {
-  const mobileTip = document.createElement('p');
-  mobileTip.className = 'pwa-install-help';
-  mobileTip.textContent = 'Telefonda müşteriye veya istasyona dokun: karakter otomatik yürüyüp etkileşir. Joystick ile de hareket edebilirsin. İlerlemen bu cihazda otomatik kaydedilir.';
-  dialogBody.append(mobileTip, installButton, installHelp);
+  dialogBody.append(installButton, installHelp);
 }
 
 let installPrompt = null;

@@ -1,12 +1,12 @@
-const CACHE_NAME = 'durumle-pwa-v3';
-const APP_SHELL = './index.html?v=7';
+const CACHE_NAME = 'durumle-pwa-v4';
+const APP_SHELL = './index.html?v=8';
 const APP_ASSETS = [
   APP_SHELL,
   './manifest.webmanifest',
   './icon.svg',
   './icons/icon-192.png',
   './icons/icon-512.png',
-  './game.js?v=7',
+  './game.js?v=8',
   './pwa.js',
   './style.css?v=6',
   './mobile.css?v=6',
